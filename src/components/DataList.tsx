@@ -24,25 +24,16 @@ function DataList() {
     const [ data, setData ] = useState<Array<Info>>([]);
     const [ currentImage, setCurrentImage ] = useState(0);
     const [ isViewerOpen, setIsViewerOpen ] = useState(false);
-    const [ hasError, setHasError ] = useState(false);
 
     //Initialize Bootstrap table search
     const { SearchBar } = Search;
 
     //Get and set API data
     useEffect(() => {
-        const fetchData = async () => {
-            const fetchedData = await fetch(url)
-
-            if (fetchedData.status === 500) {
-                setHasError(true);
-                return
-            }
-
-            const newData = await fetchedData.json()
-            setData(newData)
-        }
-        fetchData()
+            fetch(url)
+            .then(response => response.json())
+            .then(result => setData(result))
+            .catch(error => console.log(error))
     }, [])
 
     //Create image list array for ImageViewer function
@@ -72,7 +63,6 @@ function DataList() {
 
     return (
         <div style={{ marginLeft: "3%", marginRight: 0}}>
-            { hasError ? <h3>Can't reach the server...</h3> : null }
             <ToolkitProvider
                 keyField="id"
                 data={ data }
