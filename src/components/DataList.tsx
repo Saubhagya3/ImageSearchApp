@@ -40,7 +40,6 @@ function DataList() {
             }
 
             const newData = await fetchedData.json()
-
             setData(newData)
         }
         fetchData()

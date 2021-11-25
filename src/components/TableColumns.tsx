@@ -17,7 +17,7 @@ const columns = [
     },
     {
         dataField: "thumbnailUrl", 
-        text: "Image", 
+        text: "Thumbnail", 
         formatter: imageFormatter, 
         headerStyle: () => {
             return { 
