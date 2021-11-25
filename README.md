@@ -1,7 +1,6 @@
 # Image Search App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-This is an image search and display app. It's user friendly, responsive with next and previous image viewing capability. 
+This is an image search and display app. It's user friendly, responsive, with next and previous image viewing capability, and sort by id and title capability. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Please find the AWS Amplify link at: https://main.d7dcngolg4918.amplifyapp.com/
 
@@ -12,6 +11,8 @@ Please find the AWS Amplify link at: https://main.d7dcngolg4918.amplifyapp.com/
 - Yarn
 - React bootstrap table
 - React simple image viewer
+- Jest
+- Mock Server Worker (msw)
 - AWS Amplify
 
 ### `yarn start`
@@ -25,6 +26,5 @@ You will also see any lint errors in the console.
 ### `yarn test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ## Thank you
