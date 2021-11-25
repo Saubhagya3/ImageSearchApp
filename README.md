@@ -1,7 +1,9 @@
 # Image Search App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-This is an image search and display app. It's user friendly and responsive. Please find the AWS Amplify link at: 
+This is an image search and display app. It's user friendly, responsive with next and previous image viewing capability. 
+
+Please find the AWS Amplify link at: https://main.d7dcngolg4918.amplifyapp.com/
 
 ## Tools used
 
