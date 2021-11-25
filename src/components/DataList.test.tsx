@@ -32,9 +32,9 @@ test("Test to see if data title shows up on data list table component", async ()
     expect(listItem).toBeVisible();
 })
 
-// test("Test to see if error message is handled", async () => {
-//     server.use(errorResponse)
-//     render(<DataList />);
-//     const listItem = await screen.findByText("Can't reach the server...");
-//     expect(listItem).toBeVisible();
-// })
+test("Test to see if error message is handled", async () => {
+    server.use(errorResponse)
+    render(<DataList />);
+    const listItem = await screen.findByText("Can't reach the server...");
+    expect(listItem).toBeVisible();
+})
